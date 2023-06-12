@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>Седона</title>
   </head>
-
-  <body>
-    <header>
-      <a class="logo" href="#"><img src="#" alt="Логотип сайта Седона"></a>
+   <body>
+    <header class="page-header">
+      <a class="logo"><img src="#" alt="Логотип сайта Седона"></a>
       <nav class="navigation">
         <ul class="navigation-list" >
             <li class="navigation-item">
-             <a class="navigation-link" href="catalog.html">Главная</a>
+             <a class="navigation-link navigation-link-curren">Главная</a>
             </li>
             <li class="navigation-item">
              <a class="navigation-link" href="about.html">О седоне</a>
@@ -22,10 +21,18 @@
             </ul>
             <ul class="navigation-list navigation-user" >
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Поиск</a>
+                <a class="navigation-link" href="#">
+                  <span class="visualli-hidden">
+                    Поиск
+                  </span>
+                </a>
                </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Избраное</a>
+                <a class="navigation-link" href="#">
+                  <span class="visualli-hidden">
+                    Избраное
+                  </span>
+                </a>
                </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Хочу сюда!</a>
@@ -33,6 +40,13 @@
             </ul>
       </nav>
       </header>
+      <main class="main-index">
+<section class="hero">
+  <h1 class="visualli-hidden">Добро пожаловать в город Седона</h1>
+  <img src="#" alt="Изображение гор с надписью: Добро пожаловать в великолепный город Седона">
+  <img src="#" alt="" aria-hidden="true">
+  </section>
+      </main>
 
 
   </body>

@@ -52,10 +52,70 @@
               </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-hotel-link" href="#">
+                <a class="breadcrumbs-hotel-link">
                   Гостиницы
                 </a>
                 </li>
                 </ul>
                 </section>
-                <section class="catalog-title">
+                <section class="catalog-filter">
+                  <h2 class="visualli-hidden">
+                    Фильтр выбора гостиницы
+                  </h2>
+                  <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <fieldset class="catalog-filter-group">
+                      <legend class="catalog-filter-title">Инфраструктура:</legend>
+                      <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                          <label for="pool" class="control">
+                            Бассейн
+                          </label>
+                            <input class="control-input" type="checkbox" name="pool" id="pool" checked>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label for="parking" class="control"> Парковка
+                          </label>
+                            <input class="control-input" type="checkbox" name="parking" id="parking" checked>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label for="wi-fi" class="control">Wi-Fi
+                            </label>
+                            <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi" checked>
+                        </li>
+                            </ul>
+                            </fieldset>
+                            <fieldset class="catalog-filter-group">
+                              <legend class="catalog-filter-title">Тип жилья:</legend>
+                              <ul class="catalog-filter-list">
+                                <li class="catalog-filter-item">
+                                  <label for="hotel" class="control">Гостиница
+                                    </label>
+                                    <input class="control-input" type="radio" name="hotel-type" id="hotel">
+                                </li>
+                                <li class="catalog-filter-item">
+                                  <label for="motel" class="control">Мотель
+                                  </label>
+                                    <input class="control-input" type="radio" name="hotel-type" id="motel">
+                                </li>
+                                <li class="catalog-filter-item">
+                                  <label for="apartments" class="control">Апартаменты
+                                    </label>
+                                    <input class="control-input" type="radio" name="hotel-type" id="apartments">
+                                </li>
+                                    </ul>
+                                    </fieldset>
+                                    <div class="cost-filter">
+                                      <fieldset>
+                                        <legend>Стоимость, ₽:</legend>
+                                        </fieldset>
+                                        <label class="visualli-hidden" for="min-cost">минимальная цена</label>
+                                        <input type="number" name="min-cost" id="min-cost" value="0">
+                                        <label class="visualli-hidden" for="max-cost">максимальная цена</label>
+                                        <input type="number" name="max-cost" id="max-cost" value="9000">
+                                        </div>
+                                        <div class="filter-button">
+                                          <button type="submit">Применить</button>
+                                          <button type="reset">Сбросить</button>
+                                          </div>
+                                          </form>
+                                          </section>
